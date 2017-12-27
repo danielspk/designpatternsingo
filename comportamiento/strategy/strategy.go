@@ -27,10 +27,10 @@ func (o OpearationMultiply) DoOperation(num1 int, num2 int) int {
 }
 
 // Contexto
-type Contect struct {
+type Context struct {
 	strategy Strategy
 }
 
-func (c *Contect) ExecuteStrategy(num1 int, num2 int) int {
+func (c *Context) ExecuteStrategy(num1 int, num2 int) int {
 	return c.strategy.DoOperation(num1, num2)
 }
