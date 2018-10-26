@@ -1,5 +1,7 @@
 package chainofresponsability
 
+import "fmt"
+
 // Interface
 type Receptor interface {
 	ProcesarMensaje(int, string) string
@@ -37,4 +39,15 @@ func (rbp ReceptorBajaPrioridad) ProcesarMensaje(prioridad int, mensaje string) 
 	}
 
 	return ""
+}
+
+// Test de uso del patrón
+func TestPattern() {
+	manejadores := ReceptorBajaPrioridad{
+		siguiente: ReceptorAltaPrioridad{},
+	}
+
+	fmt.Println(manejadores.ProcesarMensaje(4, "Mensaje 1 - Prioridad 4"))
+	fmt.Println(manejadores.ProcesarMensaje(5, "Mensaje 2 - Prioridad 5"))
+	fmt.Println(manejadores.ProcesarMensaje(10, "Mensaje 3 - Prioridad 10"))
 }

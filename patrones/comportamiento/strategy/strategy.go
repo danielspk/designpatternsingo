@@ -1,5 +1,7 @@
 package strategy
 
+import "fmt"
+
 // Interface
 type Estrategia interface {
 	RealizarOperacion(int, int) int
@@ -33,4 +35,20 @@ type Contexto struct {
 
 func (c *Contexto) EjecutarOperacion(num1 int, num2 int) int {
 	return c.estrategia.RealizarOperacion(num1, num2)
+}
+
+// Test de uso del patrón
+func TestPattern() {
+	var contexto Contexto
+	num1 := 10
+	num2 := 5
+
+	contexto = Contexto{EstrategiaSuma{}}
+	fmt.Printf("%d + %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
+
+	contexto = Contexto{EstrategiaResta{}}
+	fmt.Printf("%d - %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
+
+	contexto = Contexto{EstrategiaMultiplica{}}
+	fmt.Printf("%d * %d = %d\n", num1, num2, contexto.EjecutarOperacion(num1, num2))
 }
