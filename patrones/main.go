@@ -5,6 +5,7 @@ import (
 
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/chainofresponsability"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/command"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 )
@@ -26,4 +27,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Template Method\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	templatemethod.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Memento\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	memento.TestPattern()
 }
