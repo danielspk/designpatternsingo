@@ -6,6 +6,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/chainofresponsability"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/command"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 )
 
 const LineaDivisora = "################################################################"
@@ -22,4 +23,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Command\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	command.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Template Method\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	templatemethod.TestPattern()
 }

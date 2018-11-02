@@ -86,5 +86,5 @@ func TestPattern() {
 	invocador.GuardarComando(ComandoApagar{receptor: receptor})
 
 	// el invocador ejecuta los dos comandos
-	fmt.Printf("Comandos ejecutados:\n%v\n", invocador.Ejecutar())
+	fmt.Printf("Comandos ejecutados:\n%v", invocador.Ejecutar())
 }
