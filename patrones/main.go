@@ -6,6 +6,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/chainofresponsability"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/command"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/interpreter"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/iterator"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
@@ -34,4 +35,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Interpreter\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	interpreter.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Iterator\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	iterator.TestPattern()
 }
