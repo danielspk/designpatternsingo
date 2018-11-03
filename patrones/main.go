@@ -10,6 +10,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
 )
 
 const LineaDivisora = "################################################################"
@@ -38,4 +39,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Iterator\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	iterator.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Visitor\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	visitor.TestPattern()
 }
