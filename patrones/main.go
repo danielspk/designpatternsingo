@@ -8,6 +8,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/interpreter"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/iterator"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/state"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
@@ -42,4 +43,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Visitor\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	visitor.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón State\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	state.TestPattern()
 }
