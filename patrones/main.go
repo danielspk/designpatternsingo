@@ -9,6 +9,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/iterator"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/mediator"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
+	"github.com/danielspk/designpatternsingo/patrones/comportamiento/observer"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/state"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
@@ -50,4 +51,9 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Mediator\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	mediator.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Observer\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	observer.TestPattern()
+
+	fmt.Printf("\n%s\nEjecutando Patrones Creacionales\n%s\n", LineaDivisora, LineaDivisora)
 }
