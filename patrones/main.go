@@ -14,6 +14,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
+	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
 )
 
 const LineaDivisora = "################################################################"
@@ -56,4 +57,7 @@ func main() {
 	observer.TestPattern()
 
 	fmt.Printf("\n%s\nEjecutando Patrones Creacionales\n%s\n", LineaDivisora, LineaDivisora)
+
+	fmt.Printf("\n%s\nPatrón Singleton\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	singleton.TestPattern()
 }
