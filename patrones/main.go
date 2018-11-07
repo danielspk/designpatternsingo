@@ -14,6 +14,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
+	"github.com/danielspk/designpatternsingo/patrones/creacionales/builder"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
 )
 
@@ -60,4 +61,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Singleton\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	singleton.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Builder\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	builder.TestPattern()
 }
