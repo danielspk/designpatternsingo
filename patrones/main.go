@@ -14,7 +14,10 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
 	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
+	"github.com/danielspk/designpatternsingo/patrones/creacionales/abstractfactory"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/builder"
+	"github.com/danielspk/designpatternsingo/patrones/creacionales/factorymethod"
+	"github.com/danielspk/designpatternsingo/patrones/creacionales/prototype"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
 )
 
@@ -64,4 +67,13 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Builder\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	builder.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Factory Method\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	factorymethod.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Abstract Factory\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	abstractfactory.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Prototype\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	prototype.TestPattern()
 }
