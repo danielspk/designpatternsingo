@@ -19,6 +19,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/factorymethod"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/prototype"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
+	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
 )
 
 const LineaDivisora = "################################################################"
@@ -76,4 +77,9 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Prototype\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	prototype.TestPattern()
+
+	fmt.Printf("\n%s\nEjecutando Patrones Estructurales\n%s\n", LineaDivisora, LineaDivisora)
+
+	fmt.Printf("\n%s\nPatrón Composite\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	composite.TestPattern()
 }
