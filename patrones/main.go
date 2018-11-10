@@ -22,6 +22,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/adapter"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/bridge"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
+	"github.com/danielspk/designpatternsingo/patrones/estructurales/proxy"
 )
 
 const LineaDivisora = "################################################################"
@@ -90,4 +91,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Bridge\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	bridge.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Proxy\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	proxy.TestPattern()
 }
