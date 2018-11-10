@@ -20,6 +20,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/prototype"
 	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/adapter"
+	"github.com/danielspk/designpatternsingo/patrones/estructurales/bridge"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
 )
 
@@ -86,4 +87,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Adapter\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	adapter.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Bridge\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	bridge.TestPattern()
 }
