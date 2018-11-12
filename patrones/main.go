@@ -22,6 +22,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/adapter"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/bridge"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
+	"github.com/danielspk/designpatternsingo/patrones/estructurales/decorator"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/proxy"
 )
 
@@ -94,4 +95,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Proxy\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	proxy.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Decorator\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	decorator.TestPattern()
 }
