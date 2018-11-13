@@ -23,6 +23,7 @@ import (
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/bridge"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/decorator"
+	"github.com/danielspk/designpatternsingo/patrones/estructurales/facade"
 	"github.com/danielspk/designpatternsingo/patrones/estructurales/proxy"
 )
 
@@ -98,4 +99,7 @@ func main() {
 
 	fmt.Printf("\n%s\nPatrón Decorator\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	decorator.TestPattern()
+
+	fmt.Printf("\n%s\nPatrón Facade\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	facade.TestPattern()
 }
