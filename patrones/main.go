@@ -3,29 +3,29 @@ package main
 import (
 	"fmt"
 
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/chainofresponsability"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/command"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/interpreter"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/iterator"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/mediator"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/memento"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/observer"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/state"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/strategy"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/templatemethod"
-	"github.com/danielspk/designpatternsingo/patrones/comportamiento/visitor"
-	"github.com/danielspk/designpatternsingo/patrones/creacionales/abstractfactory"
-	"github.com/danielspk/designpatternsingo/patrones/creacionales/builder"
-	"github.com/danielspk/designpatternsingo/patrones/creacionales/factorymethod"
-	"github.com/danielspk/designpatternsingo/patrones/creacionales/prototype"
-	"github.com/danielspk/designpatternsingo/patrones/creacionales/singleton"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/adapter"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/bridge"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/composite"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/decorator"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/facade"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/flyweight"
-	"github.com/danielspk/designpatternsingo/patrones/estructurales/proxy"
+	"designpatternsingo/patrones/comportamiento/chainofresponsibility"
+	"designpatternsingo/patrones/comportamiento/command"
+	"designpatternsingo/patrones/comportamiento/interpreter"
+	"designpatternsingo/patrones/comportamiento/iterator"
+	"designpatternsingo/patrones/comportamiento/mediator"
+	"designpatternsingo/patrones/comportamiento/memento"
+	"designpatternsingo/patrones/comportamiento/observer"
+	"designpatternsingo/patrones/comportamiento/state"
+	"designpatternsingo/patrones/comportamiento/strategy"
+	"designpatternsingo/patrones/comportamiento/templatemethod"
+	"designpatternsingo/patrones/comportamiento/visitor"
+	"designpatternsingo/patrones/creacionales/abstractfactory"
+	"designpatternsingo/patrones/creacionales/builder"
+	"designpatternsingo/patrones/creacionales/factorymethod"
+	"designpatternsingo/patrones/creacionales/prototype"
+	"designpatternsingo/patrones/creacionales/singleton"
+	"designpatternsingo/patrones/estructurales/adapter"
+	"designpatternsingo/patrones/estructurales/bridge"
+	"designpatternsingo/patrones/estructurales/composite"
+	"designpatternsingo/patrones/estructurales/decorator"
+	"designpatternsingo/patrones/estructurales/facade"
+	"designpatternsingo/patrones/estructurales/flyweight"
+	"designpatternsingo/patrones/estructurales/proxy"
 )
 
 const LineaDivisora = "################################################################"
@@ -37,8 +37,8 @@ func main() {
 	fmt.Printf("\n%s\nPatrón Strategy\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	strategy.TestPattern()
 
-	fmt.Printf("\n%s\nPatrón Chain of Responsability\n%s\n", LineaSubDivisora, LineaSubDivisora)
-	chainofresponsability.TestPattern()
+	fmt.Printf("\n%s\nPatrón Chain of responsibility\n%s\n", LineaSubDivisora, LineaSubDivisora)
+	chainofresponsibility.TestPattern()
 
 	fmt.Printf("\n%s\nPatrón Command\n%s\n", LineaSubDivisora, LineaSubDivisora)
 	command.TestPattern()
